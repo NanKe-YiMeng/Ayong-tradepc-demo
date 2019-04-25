@@ -6,24 +6,24 @@ import { ajax, nameSpace } from 'utils/index';
 const ns = nameSpace('Demo');
 export const CLICK_DEMO = ns('CLICK_DEMO');
 
+/**
+ * Demo Action
+ */
 export function clickDemo() {
     return (dispatch, getState) => {
         // console.log(getState());
-        let { counter } = getState().Demo;
-        console.log(counter);
+        const { counter } = getState().Demo;
         ajax({
             api: 'page2List',
             method: 'GET',
-        }, (json) => {
+        }, () => {
             // ajax请求成功
-            console.log(json);
             dispatch({
                 type: CLICK_DEMO,
-                data: { counter: ++counter },
+                data: { counter: counter + 1 },
             });
-        }, (json) => {
+        }, () => {
             // ajax请求失败
-            console.log('no');
         });
     };
 }

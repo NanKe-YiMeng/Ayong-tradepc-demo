@@ -6,6 +6,11 @@ import * as actions from './action';
 const initialState = { counter: 0 };
 const defaultAction = { type: 'doNothing' };
 
+/**
+ * Demo1 Reducers
+ * @param {*} state Reducer state
+ * @param {*} action Reducer Action
+ */
 export default function index(state = initialState, action = defaultAction) {
     switch (action.type) {
     case actions.CLICK_DEMO:

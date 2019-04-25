@@ -1,5 +1,3 @@
-
-
 /**
  * API MAP 对象
  * 页面上所有ajax请求统一在这里管理.
@@ -12,9 +10,7 @@ export default {
         page2List: '/data/page2List.json',
     },
     // daily环境,可重写base定义的接口
-    development: {
-    //
-    },
+    development: {},
     // 线上环境
     production: {
     // 这里填入线上的host

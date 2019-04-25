@@ -74,7 +74,7 @@
         //关闭 非Button的 onClick 事件需要至少一个键盘事件 规则
         "jsx-a11y/no-static-element-interactions":0,
         "jsx-a11y/click-events-have-key-events":0,
-        "no-console": ["error", { allow: ["warn", "error"] }],
-        "react/prop-types": [2, { ignore: ['children'] }]
+        "no-console": ["error", { "allow": ["warn", "error"] }],
+        "react/prop-types": [2, { "ignore": ["children"] }]
     }
 }

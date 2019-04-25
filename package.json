@@ -11,7 +11,7 @@
   "scripts": {
     "start": "DEV=1 LIVELOAD=1 ./node_modules/.bin/webpack-dev-server --config ./webpack.config.js --host 0.0.0.0 --port 9000",
     "build": "./node_modules/.bin/webpack --config ./webpack.config.js",
-    "lint": "eslint --ext .js --ext .jsx src/"
+    "lint": "eslint --ext .js --ext .jsx  src/"
   },
   "pre-commit": [
     "lint"
@@ -34,6 +34,7 @@
     "extend": "^3.0.0",
     "moment": "^2.18.1",
     "pre-commit": "^1.2.2",
+    "prop-types": "^15.7.2",
     "react": "^15.3.0",
     "react-addons-transition-group": "^15.3.0",
     "react-dom": "^15.3.0",

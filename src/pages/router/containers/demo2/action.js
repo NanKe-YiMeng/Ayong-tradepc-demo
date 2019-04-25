@@ -1,29 +1,30 @@
-
-
 import { ajax, nameSpace } from 'utils/index';
-
 
 const ns = nameSpace('Demo2');
 export const CLICK_DEMO = ns('CLICK_DEMO');
 
+/**
+ * @author WangC
+ */
 export function clickDemo() {
     return (dispatch, getState) => {
         // console.log(getState());
-        let { counter } = getState().Demo2;
-        console.log(counter);
-        ajax({
-            api: 'page2List',
-            method: 'GET',
-        }, (json) => {
-            // ajax请求成功
-            console.log(json);
-            dispatch({
-                type: CLICK_DEMO,
-                data: { counter: ++counter },
-            });
-        }, (json) => {
-            // ajax请求失败
-            console.log('no');
-        });
+        const { counter } = getState().Demo2;
+        ajax(
+            {
+                api: 'page2List',
+                method: 'GET',
+            },
+            () => {
+                // ajax请求成功
+                dispatch({
+                    type: CLICK_DEMO,
+                    data: { counter: counter + 1 },
+                });
+            },
+            () => {
+                // ajax请求失败
+            },
+        );
     };
 }

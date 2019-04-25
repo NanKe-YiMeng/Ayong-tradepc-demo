@@ -1,6 +1,7 @@
 /node_modules
 /build
 /web
+/src/utils
 .eslintrc
 .babellrc
 .editorconfig
