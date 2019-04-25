@@ -15,6 +15,8 @@ const Header = () => {
         local: {
             redux: '/dist/redux.html',
 
+            business: '/dist/business.html',
+
             routerDemo: '/dist/router.html#/demo',
             routerDemo1: '/dist/router.html#/demo1',
             routerDemo2: '/dist/router.html#/demo2',
@@ -28,6 +30,8 @@ const Header = () => {
         onLine: {
             // 自行根据服务端路径定义
             redux: '/dist/redux.html',
+
+            business: '/dist/business.html',
 
             routerDemo: '/dist/router.html#/demo',
             routerDemo1: '/dist/router.html#/demo1',
@@ -77,6 +81,7 @@ const Header = () => {
             </Item>
             <Item itemid="3" text="Redux" icon="training" link={links.redux} />
             <Item itemid="4" text="H5" icon="training" link={links.h5} />
+            <Item itemid="5" text="业务模块" link={links.business} />
             <li className="navigation-toolbar">
                 <ul>
                     <li>

@@ -21,7 +21,3 @@ globby([
         fs.copySync(item, `build/lib/${filename}`);
     });
 });
-
-// 使用统计
-
-console.log('copy files to build/lib done !');

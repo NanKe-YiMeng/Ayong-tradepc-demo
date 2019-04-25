@@ -1,5 +1,3 @@
-
-
 import { ajax, nameSpace } from 'utils/index';
 
 const ns = nameSpace('Index');
@@ -15,7 +13,7 @@ export function getList(counter, sucCallback, failCallback) {
     return (dispatch) => {
         // 接收到数据
         ajax({
-            api: 'page2List',
+            api: 'messages',
             method: 'get',
         }, (json) => {
             dispatch({

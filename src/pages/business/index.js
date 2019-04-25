@@ -5,16 +5,21 @@ import App from '../../components/app/index';
 import createStore from './store/index';
 import reducers from './reducers/index';
 
-import List from './containers/list/index';
+import Content from './containers/App/App';
 
 import './index.scss';
 
-const store = createStore(reducers);
-
+// TODO: Clear eslint and Redux devtools extension
+/* eslint-disable no-underscore-dangle */
+const store = createStore(
+    reducers,
+    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
+);
+/* eslint-enable */
 ReactDom.render(
     <Provider store={store}>
         <App>
-            <List />
+            <Content />
         </App>
     </Provider>,
     document.getElementById('container'),

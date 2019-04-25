@@ -15,7 +15,6 @@ var Tools = {
           suc && suc(res);
           console.log(`接口请求成功`,res);
       }else {//在这里可以统一自定义错误返回码异常处理
-        //TODO:接口统一异常处理
           err && err(res);
           console.error(`接口请求失败`,res);
       }

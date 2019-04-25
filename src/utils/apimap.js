@@ -7,7 +7,8 @@ export default {
     local: {
     /* invoke */
         home: '/data/home.json',
-        page2List: '/data/page2List.json',
+		page2List: '/data/page2List.json',
+		messages: '/data/messages.json',
     },
     // daily环境,可重写base定义的接口
     development: {},
