@@ -1,42 +1,44 @@
-import Tools from 'utils/index';
-import React from 'react';
-import { Navigation, Icon, Menu } from 'qnui';
+import Tools from "utils/index";
+import React from "react";
+
+import { Navigation, Icon, Menu } from "qnui";
+
 const { Item } = Navigation;
 
 /**
     @author Mothpro
     导航条
-**/
+* */
 class Header extends React.Component {
 	render() {
 		const linkConfig = {
 			//本地localhost或127.0.0.1环境下的路径设置
 			local: {
-				redux: '/dist/redux.html',
+				redux: "/dist/redux.html",
 
-				routerDemo: '/dist/router.html#/demo',
-				routerDemo1: '/dist/router.html#/demo1',
-				routerDemo2: '/dist/router.html#/demo2',
+				routerDemo: "/dist/router.html#/demo",
+				routerDemo1: "/dist/router.html#/demo1",
+				routerDemo2: "/dist/router.html#/demo2",
 
-				qnpage: '/dist/qnpage.html#/',
-				qnpagePage1: '/dist/qnpage.html#/page1',
-				qnpagePage2: '/dist/qnpage.html#/page2',
+				qnpage: "/dist/qnpage.html#/",
+				qnpagePage1: "/dist/qnpage.html#/page1",
+				qnpagePage2: "/dist/qnpage.html#/page2",
 
-				h5: '/dist/h5/ebsindex.html'
+				h5: "/dist/h5/ebsindex.html"
 			},
 			onLine: {
 				//自行根据服务端路径定义
-				redux: '/dist/redux.html',
+				redux: "/dist/redux.html",
 
-				routerDemo: '/dist/router.html#/demo',
-				routerDemo1: '/dist/router.html#/demo1',
-				routerDemo2: '/dist/router.html#/demo2',
+				routerDemo: "/dist/router.html#/demo",
+				routerDemo1: "/dist/router.html#/demo1",
+				routerDemo2: "/dist/router.html#/demo2",
 
-				qnpage: '/dist/qnpage.html#/',
-				qnpagePage1: '/dist/qnpage.html#/page1',
-				qnpagePage2: '/dist/qnpage.html#/page2',
+				qnpage: "/dist/qnpage.html#/",
+				qnpagePage1: "/dist/qnpage.html#/page1",
+				qnpagePage2: "/dist/qnpage.html#/page2",
 
-				h5: '/dist/h5/ebsindex.html'
+				h5: "/dist/h5/ebsindex.html"
 			}
 		};
 
