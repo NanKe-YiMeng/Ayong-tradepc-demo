@@ -10,11 +10,6 @@ import './index.scss';
  * Page2 页面
  */
 class Page2 extends React.Component {
-    propTypes = {
-        dispatch: PropTypes.func.isRequired,
-        page2: PropTypes.shape({ list: PropTypes.array.isRequired }).isRequired,
-    }
-
     handleClick = () => {
         const { dispatch, page2 } = this.props;
         dispatch(actions.getList(page2.counter + 1));
@@ -41,6 +36,10 @@ class Page2 extends React.Component {
         );
     }
 }
+Page2.propTypes = {
+    dispatch: PropTypes.func.isRequired,
+    page2: PropTypes.shape({ list: PropTypes.array.isRequired }).isRequired,
+};
 
 // map state to props
 export default connect(state => ({ page2: state.page2 }))(Page2);

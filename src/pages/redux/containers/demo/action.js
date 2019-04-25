@@ -1,7 +1,4 @@
-
-
 import { ajax, nameSpace } from 'utils/index';
-
 
 const ns = nameSpace('Demo');
 export const CLICK_DEMO = ns('CLICK_DEMO');
@@ -11,7 +8,6 @@ export const CLICK_DEMO = ns('CLICK_DEMO');
  */
 export function clickDemo() {
     return (dispatch, getState) => {
-        // console.log(getState());
         const { counter } = getState().Demo;
         ajax({
             api: 'page2List',

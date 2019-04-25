@@ -10,12 +10,9 @@ import Demo from './containers/demo/index';
     @author Mothpro
     这是一个使用react技术搭建的redux演示页面
 * */
-/* eslint-disable no-underscore-dangle */
 const store = createStoreWithMdware(
     reducers,
-    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
 );
-/* eslint-enable */
 ReactDom.render(
     <Provider store={store}>
         <App>

@@ -4,13 +4,13 @@ import './index.scss';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import * as actions from './action';
+import * as theActions from './action';
 
 /**
     @author Mothpro
     这是一个演示的Demo组件，用于演示redux的使用
 * */
-const Demo = ({ counter }) => {
+const Demo = ({ actions, counter }) => {
     const plan = counter > 0 ? <p>{`叫你点你还真点啊！${counter}`}</p> : '';
     return (
         <div>
@@ -19,17 +19,20 @@ const Demo = ({ counter }) => {
                 type="primary"
                 className="redux-demo"
                 onClick={() => {
-                    actions.clickDemo(() => {}, () => {});
+                    actions.clickDemo(() => { }, () => { });
                 }}
             >
-            点我看看
+                点我看看
             </Button>
         </div>
     );
 };
-Demo.propTypes = { counter: PropTypes.number.isRequired };
+Demo.propTypes = {
+    counter: PropTypes.number.isRequired,
+    actions: PropTypes.shape(PropTypes.func.isRequired).isRequired,
+};
 
 export default connect(
     state => state.Demo,
-    dispatch => ({ actions: bindActionCreators(actions, dispatch) }),
+    dispatch => ({ actions: bindActionCreators(theActions, dispatch) }),
 )(Demo);

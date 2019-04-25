@@ -10,11 +10,6 @@ import './index.scss';
  * The Containers Page1
  */
 class Page1 extends React.Component {
-    propTypes = {
-        dispatch: PropTypes.func.isRequired,
-        page1: PropTypes.shape({ list: PropTypes.array.isRequired }).isRequired,
-    };
-
     /**
      * @author WangC
      *  Handle Click 点击事件
@@ -55,5 +50,9 @@ class Page1 extends React.Component {
         );
     }
 }
+Page1.propTypes = {
+    dispatch: PropTypes.func.isRequired,
+    page1: PropTypes.shape({ list: PropTypes.array.isRequired }).isRequired,
+};
 
 export default connect(state => ({ page1: state.page1 }))(Page1);
