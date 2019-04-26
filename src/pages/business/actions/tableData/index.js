@@ -1,7 +1,5 @@
-import { ajax, nameSpace } from 'utils/index';
-
-const ns = nameSpace('Index');
-export const GET_LIST_SUCCESS = ns('GET_LIST_SUCCESS');
+import { ajax } from 'utils/index';
+import * as LoadingType from '../../constants/TableDataStatus';
 
 /**
  * Business Action
@@ -9,22 +7,21 @@ export const GET_LIST_SUCCESS = ns('GET_LIST_SUCCESS');
  * @param {*} sucCallback success callback
  * @param {*} failCallback fail callback
  */
-export function getList(counter, sucCallback, failCallback) {
+export default function tableData(sucCallback, failCallback) {
     return (dispatch) => {
-        // 接收到数据
+        // 接收数据中
+        dispatch({ type: LoadingType.DATA_LOADING });
         ajax({
             api: 'messages',
             method: 'get',
         }, (json) => {
             dispatch({
-                type: GET_LIST_SUCCESS,
-                data: {
-                    list: json.data,
-                    counter,
-                },
+                type: LoadingType.DATA_LOADING_SUCCESS,
+                data: { list: json.data },
             });
             sucCallback(json);
         }, (json) => {
+            dispatch({ type: LoadingType.DATA_LOADING_ERROR });
             failCallback(json);
         });
     };

@@ -1,0 +1,14 @@
+.tool_bar {
+    padding: 4px;
+    min-height: 30px;
+    display: flex;
+    .tool_bar_left {
+        flex: 1;
+        height: 30px;
+    }
+    .tool_bar_right {
+        width: 30%;
+        height: 30px;
+    }
+}
+
