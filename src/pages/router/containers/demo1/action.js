@@ -1,5 +1,3 @@
-
-
 import { ajax, nameSpace } from 'utils/index';
 
 

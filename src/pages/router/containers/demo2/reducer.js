@@ -1,5 +1,3 @@
-
-
 import * as actions from './action';
 
 // 对页面prop 数据进行管理

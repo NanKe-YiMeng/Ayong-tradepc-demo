@@ -28,6 +28,14 @@ export function NameChange(name) {
 }
 
 /**
+ *
+ * @param {*} pageCounts Page Counts 页面总数
+ */
+export function PageCountsChange(pageCounts) {
+    return { type: ActionType.PAGE_COUNTS_CHANGE, pageCounts: (pageCounts / ActionType.PAGE_SIZE) + 1 };
+}
+
+/**
  * Page Current Change
  * 页面分页页码改变
  * @param {*} pageCurrent 页面内容 分页页码

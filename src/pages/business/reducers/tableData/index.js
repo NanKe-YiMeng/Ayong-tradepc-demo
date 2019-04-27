@@ -1,6 +1,9 @@
 import * as ActionTypes from '../../constants/TableDataStatus';
 // 对页面prop 数据进行管理
-const initialState = { data: [] };
+const initialState = {
+    loadingStatus: false,
+    dataList: [],
+};
 
 /**
  * TableData Reducer
@@ -10,11 +13,11 @@ const initialState = { data: [] };
 export default function index(state = initialState, action) {
     switch (action.type) {
     case ActionTypes.DATA_LOADING:
-        return Object.assign({}, state, []);
+        return { ...state, dataList: [], loadingStatus: false };
     case ActionTypes.DATA_LOADING_SUCCESS:
-        return Object.assign({}, state, action.data);
+        return { ...state, dataList: action.data.list, loadingStatus: true };
     case ActionTypes.DATA_LOADING_ERROR:
-        return Object.assign({}, state, []);
+        return { ...state, dateList: [], loadingStatus: false };
     default:
         return state;
     }
