@@ -46,3 +46,6 @@ http:/
 
 # page lock file
 package-lock.json
+
+# Mac File System File
+.DS_Store
