@@ -74,7 +74,6 @@ class MsgTable extends React.Component {
     }
 }
 
-
 /**
  * 获取过滤后的数据
  * @param {*} dataList 原有数据
@@ -88,7 +87,7 @@ function getFilterData(dataList, filter) {
         if ((filter.timePicker[0] === null && filter.timePicker[1] === null) || filter.timePicker.length !== 2) {
             return true;
         }
-        return time > filter.timePicker[0] && time < filter.timePicker[1];
+        return time >= filter.timePicker[0] && time <= filter.timePicker[1];
     });
     result = result.filter((item) => {
         if (filter.nameInput === '') {
