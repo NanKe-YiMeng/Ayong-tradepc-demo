@@ -1,4 +1,8 @@
-
-.content{
-    margin: 8px 5px;
+.container {
+    min-width: 1100px;
+    overflow-x: scroll;
+    .content{
+        margin: 8px 5px;
+    }
 }
+

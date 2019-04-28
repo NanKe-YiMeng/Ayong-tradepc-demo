@@ -28,11 +28,11 @@ export function NameChange(name) {
 }
 
 /**
- *
- * @param {*} pageCounts Page Counts 页面总数
+ * 页面数据总条数改变
+ * @param {*} pageCounts Page Counts 页面数据总数
  */
-export function PageCountsChange(pageCounts) {
-    return { type: ActionType.PAGE_COUNTS_CHANGE, pageCounts: (pageCounts / ActionType.PAGE_SIZE) + 1 };
+export function pageCountsChange(pageCounts) {
+    return { type: ActionType.PAGE_COUNTS_CHANGE, data: { pageCounts, pageCurrent: 1 } };
 }
 
 /**

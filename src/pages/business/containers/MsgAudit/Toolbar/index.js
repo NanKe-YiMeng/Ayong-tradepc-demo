@@ -55,6 +55,7 @@ class Toolbar extends React.Component {
                         <Select.Option value={AuditStatus.STATUS_ALL}>全部状态</Select.Option>
                         <Select.Option value={AuditStatus.STATUS_REVIEW}>审核中</Select.Option>
                         <Select.Option value={AuditStatus.STATUS_PASS}>审核通过</Select.Option>
+                        <Select.Option value={AuditStatus.STATUS_REJECT}>拒绝审核</Select.Option>
                     </Select>
                     <RangePicker
                         className="item"

@@ -5,7 +5,7 @@
         "list": [
             {
                 "id": "1",
-                "times": "2019/4/27 下午11:45:41",
+                "times": "2019-04-28T03:19:49.156Z",
                 "namenick": "疯狂鱿鱼",
                 "content": "Content Test......",
                 "sendType": "群发",
@@ -14,17 +14,17 @@
             },
             {
                 "id": "2",
-                "times": "2019/4/27 下午11:45:41",
+                "times": "2019-04-28T03:19:49.156Z",
                 "namenick": "疯狂鱿鱼",
                 "content": "Content Test......",
                 "sendType": "群发",
-                "auditStatus": "审核通过",
+                "auditStatus": "审核中",
                 "auditer": "爱用科技:嘻嘻,2019-4-25"
             },
             {
                 "id": "3",
-                "times": "2019/4/27 下午11:45:41",
-                "namenick": "疯狂鱿鱼",
+                "times": "2019-04-28T03:19:49.156Z",
+                "namenick": "鱿鱼",
                 "content": "Content Test......",
                 "sendType": "群发",
                 "auditStatus": "审核通过",
@@ -32,16 +32,16 @@
             },
             {
                 "id": "4",
-                "times": "2019/4/27 下午11:45:41",
+                "times": "2019-04-28T03:19:49.156Z",
                 "namenick": "疯狂鱿鱼",
                 "content": "Content Test......",
                 "sendType": "群发",
-                "auditStatus": "审核通过",
+                "auditStatus": "拒绝审核",
                 "auditer": "爱用科技:嘻嘻,2019-4-25"
             },
             {
                 "id": "5",
-                "times": "2019/4/27 下午11:45:41",
+                "times": "2019-04-28T03:19:49.156Z",
                 "namenick": "疯狂鱿鱼",
                 "content": "Content Test......",
                 "sendType": "群发",
@@ -50,7 +50,7 @@
             },
             {
                 "id": "6",
-                "times": "2019/4/27 下午11:45:41",
+                "times": "2019-04-14T03:19:49.156Z",
                 "namenick": "疯狂鱿鱼",
                 "content": "Content Test......",
                 "sendType": "群发",
@@ -59,7 +59,7 @@
             },
             {
                 "id": "7",
-                "times": "2019/4/27 下午11:45:41",
+                "times": "2019-04-28T03:19:49.156Z",
                 "namenick": "疯狂鱿鱼",
                 "content": "Content Test......",
                 "sendType": "群发",
@@ -68,8 +68,8 @@
             },
             {
                 "id": "8",
-                "times": "2019/4/27 下午11:45:41",
-                "namenick": "疯狂鱿鱼",
+                "times": "2019-04-15T03:29:30.261Z",
+                "namenick": "鱿鱼",
                 "content": "Content Test......",
                 "sendType": "群发",
                 "auditStatus": "审核通过",
@@ -77,7 +77,7 @@
             },
             {
                 "id": "9",
-                "times": "2019/4/27 下午11:45:41",
+                "times": "2019-04-12T03:29:30.261Z",
                 "namenick": "疯狂鱿鱼",
                 "content": "Content Test......",
                 "sendType": "群发",
@@ -86,7 +86,7 @@
             },
             {
                 "id": "10",
-                "times": "2019/4/27 下午11:45:41",
+                "times": "2019-04-28T03:19:49.156Z",
                 "namenick": "疯狂鱿鱼",
                 "content": "Content Test......",
                 "sendType": "群发",
@@ -95,8 +95,8 @@
             },
             {
                 "id": "11",
-                "times": "2019/4/27 下午11:45:41",
-                "namenick": "疯狂鱿鱼",
+                "times": "2019-04-28T03:19:49.156Z",
+                "namenick": "鱿鱼",
                 "content": "Content Test......",
                 "sendType": "群发",
                 "auditStatus": "审核通过",
