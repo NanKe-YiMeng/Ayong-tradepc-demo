@@ -43,3 +43,6 @@ http:/
 # IDE/sublime text
 *.sublime-project
 *.sublime-workspace
+
+# page lock file
+package-lock.json

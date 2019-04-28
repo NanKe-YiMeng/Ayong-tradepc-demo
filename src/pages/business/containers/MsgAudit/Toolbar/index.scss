@@ -5,10 +5,17 @@
     .tool_bar_left {
         flex: 1;
         height: 30px;
+        line-height: 30px;
+        .item {
+            margin-right: 15px;
+        }
+        .special {
+            top: 8px;
+        }
     }
     .tool_bar_right {
-        width: 30%;
-        height: 30px;
+
+        width: 20%;
     }
 }
 

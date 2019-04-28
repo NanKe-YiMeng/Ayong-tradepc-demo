@@ -9,6 +9,7 @@ const initialState = {
     auditStatus: AuditStatus.STATUS_ALL,
     timePicker: [],
     nameInput: '',
+    pageCounts: 0,
     pageCurrent: 1,
 };
 
@@ -20,13 +21,15 @@ const initialState = {
 export default function Toolbar(state = initialState, action) {
     switch (action.type) {
     case ActionType.STATUS_CHANGE:
-        return Object.assign({}, state, { auditStatus: action.status });
+        return { ...state, auditStatus: action.status };
     case ActionType.TIME_CHANGE:
-        return Object.assign({}, state, { timePicker: action.times });
+        return { ...state, timePicker: action.times };
     case ActionType.NAME_CHANGE:
-        return Object.assign({}, state, { nameInput: action.name });
+        return { ...state, nameInput: action.name };
+    case ActionType.PAGE_COUNTS_CHANGE:
+        return { ...state, pageCounts: action.data.pageCounts, pageCurrent: action.data.pageCurrent };
     case ActionType.PAGE_CURRENT_CHANGE:
-        return Object.assign({}, state, { pageCurrent: action.pageCurrent });
+        return { ...state, pageCurrent: action.pageCurrent };
     default:
         return state;
     }
